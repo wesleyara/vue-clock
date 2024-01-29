@@ -6,12 +6,11 @@ import List from "./List.vue";
 import Modal from "./Modal.vue";
 
 const isOpen = ref(false);
+const alarms = ref(getStorage("alarms"));
 
 const handleOpenModal = () => {
   isOpen.value = !isOpen.value;
 };
-
-const alarms = ref(getStorage("alarms"));
 
 const handleUpdateAlarms = () => {
   alarms.value = getStorage("alarms");

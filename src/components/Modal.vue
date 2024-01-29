@@ -31,8 +31,6 @@ const minuteInput = ref("00");
 const occurrenceInput = ref("Diariamente");
 const daysSelected = ref<string[]>([]);
 
-console.log(hourInput.value);
-
 const onChange = (e: any, constant: string) => {
   if (constant === "hour") {
     hourInput.value = e.target.value;
