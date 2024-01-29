@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply text-5xl font-bold;
+}
+
+h2 {
+  @apply text-4xl font-bold;
+}
+
+h3 {
+  @apply text-3xl font-bold;
+}
+
+h4 {
+  @apply text-2xl font-bold;
+}
+
+h5 {
+  @apply text-xl font-bold;
+}
+
+span,
+p {
+  @apply text-base;
+}
+
+.window-width {
+  @apply w-11/12 sm:w-[640px] md:w-[768px] lg:w-[1024px];
+}
+
+.btn {
+  @apply bg-blue-500 rounded-md text-white font-semibold px-4 py-2 hover:bg-blue-400 transition-all ease-in-out;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+}
+
+.modal-overflow {
+  @apply blur-md bg-slate-300 bg-opacity-30;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+select {
+  @apply px-4 py-2 border border-black rounded-md text-xl;
+}
