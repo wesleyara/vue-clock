@@ -5,7 +5,7 @@ import { ref } from "vue";
 import List from "./List.vue";
 import Modal from "./Modal.vue";
 
-const isOpen = ref(true);
+const isOpen = ref(false);
 
 const handleOpenModal = () => {
   isOpen.value = !isOpen.value;
